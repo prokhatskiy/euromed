@@ -5,6 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var fileinclude = require('gulp-file-include');
 var rupture = require('rupture');
 var jshint = require('gulp-jshint');
+var htmlprettify = require('gulp-html-prettify');
 
 var path = {
     root: '',
@@ -36,6 +37,11 @@ var config = {
     fileincludeOptions: {
         prefix: '@@',
         basepath: '@file'
+    },
+
+    htmlprettifyOptions: {
+        indent_char: '  ',
+        indent_size: 2
     }
 };
 
@@ -63,6 +69,7 @@ gulp.task('watch', function() {
 gulp.task('pages', function() {
     gulp.src(path.pages)
         .pipe(fileinclude(config.fileincludeOptions))
+        .pipe(htmlprettify(config.htmlprettifyOptions))
         .pipe(gulp.dest(path.root))
 });
 
