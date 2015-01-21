@@ -55,7 +55,7 @@ gulp.task('js', function() {
 
 gulp.task('watch', function() {
     gulp.watch('styl/**', ['stylus']);
-    gulp.watch('pages/*.html' , ['pages']);
+    gulp.watch(['pages/*.html', 'partials/**'] , ['pages']);
     gulp.watch('js/**', ['js']);
 });
 
