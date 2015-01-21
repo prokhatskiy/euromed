@@ -601,7 +601,7 @@ input {
   }
 }
 
-/* line 271 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 279 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
 
@@ -972,4 +972,17 @@ input {
 /* line 274 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
 .soc__link_rss {
   background: url("../img/rss-btn-ico") no-repeat 0 0;
+}
+
+/* line 278 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
+.seotext {
+  font-family: 'Ubuntu Light';
+  padding-top: 30px;
+  border-top: 1px solid #003b7c;
+  margin-bottom: 60px;
+}
+
+/* line 284 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
+.seotext:empty {
+  display: none;
 }

@@ -10,7 +10,7 @@
         app.$html.removeClass('no-js');
         app.$html.addClass('js');
 
-        $('#seo-placeholder').text($('#seotext').text());
+        $('#seo-placeholder').html($('#seotext').html());
         $('#seotext').remove();
     };
 
