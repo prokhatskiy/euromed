@@ -1,9 +1,10 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var stylus = require('gulp-stylus');
-var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
 var fileinclude = require('gulp-file-include');
+var rupture = require('rupture');
+var jshint = require('gulp-jshint');
 
 var path = {
     root: '',
@@ -12,14 +13,19 @@ var path = {
     images: 'img/',
     partials: 'partials/',
     pages: 'pages/*.html',
-    js: 'js/',
-    jsDist: 'js/min/'
+    js: [
+        'js/lib/*.js',
+        'js/modules/*.js',
+        'js/app/app.js'
+    ],
+    jsDest: 'javascripts/'
 };
 
 var config = {
     stylusOptions : {
         compress : false,
-        linenos : true
+        linenos : true,
+        use: [rupture()]
     },
 
     autoprefixerOptions : {
@@ -35,14 +41,22 @@ var config = {
 
 gulp.task('stylus', function() {
     return gulp.src(path.stylus)
-        .pipe(stylus(config.stylusOptions))
-        .pipe(autoprefixer(config.autoprefixerOptions))
-        .pipe(gulp.dest(path.css))
+            .pipe(stylus(config.stylusOptions))
+            .pipe(autoprefixer(config.autoprefixerOptions))
+            .pipe(gulp.dest(path.css))
+});
+
+gulp.task('js', function() {
+   return gulp.src(path.js)
+            .pipe(jshint())
+            .pipe(concat('app.js'))
+            .pipe(gulp.dest(path.jsDest));
 });
 
 gulp.task('watch', function() {
     gulp.watch('styl/**', ['stylus']);
     gulp.watch('pages/*.html' , ['pages']);
+    gulp.watch('js/**', ['js']);
 });
 
 
@@ -52,4 +66,4 @@ gulp.task('pages', function() {
         .pipe(gulp.dest(path.root))
 });
 
-gulp.task('default', ['stylus', 'pages', 'watch']);
+gulp.task('default', ['stylus', 'pages', 'js','watch']);

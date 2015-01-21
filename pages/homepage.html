@@ -1,7 +1,23 @@
 <!doctype html>
-<html lang="ru">
+<html>
     @@include('../partials/head.html')
-<body>
+<body data-module-type="Global">
+    @@include('../partials/seotext.html')
+    <div class="l-wrapper">
+        @@include('../partials/header.html')
+        @@include('../partials/main-nav.html')
 
+        <main class="l-container">
+            <aside class="l-sidebar l-sidebar_left">
+
+            </aside>
+            <section class="l-content">
+
+            </section>
+            @@include('../partials/seoplace.html');
+        </main>
+    </div>
+    @@include('../partials/footer.html')
+    @@include('../partials/scripts.html')
 </body>
 </html>
