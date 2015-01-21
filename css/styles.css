@@ -370,7 +370,7 @@ a:hover {
 
 /* line 50 : /Users/artem/Dropbox/webdev/euromed/styl/typography/typography.styl */
 
-/* line 145 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/form.styl */
+/* line 81 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/form.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/form.styl */
 .btn {
@@ -449,7 +449,7 @@ input {
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/layout/breakpoints.styl */
 
-/* line 93 : /Users/artem/Dropbox/webdev/euromed/styl/layout/breakpoints.styl */
+/* line 103 : /Users/artem/Dropbox/webdev/euromed/styl/layout/breakpoints.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 
@@ -518,9 +518,26 @@ input {
   float: right;
   width: 270px;
 }
-@media (max-width: 1023px) {
+@media (min-width: 1024px) and (max-width: 1100px) {
 
 /* line 50 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+  .l-header-col-1 {
+    width: 26.666666666666558%;
+  }
+
+/* line 53 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+  .l-header-col-2 {
+    width: 19.99999999999992%;
+  }
+
+/* line 56 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+  .l-header-col-3 {
+    width: 19.99999999999992%;
+  }
+}
+@media (max-width: 1023px) {
+
+/* line 60 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
   .l-header-col-1,
   .l-header-col-2,
   .l-header-col-3,
@@ -530,7 +547,7 @@ input {
   }
 }
 
-/* line 58 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 68 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 .l-footer {
   overflow: hidden;
   height: 260px;
@@ -539,43 +556,43 @@ input {
   margin-top: 60px;
 }
 
-/* line 65 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 75 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 .l-footer-col-1,
 .l-footer-col-2,
 .l-footer-col-3 {
   float: left;
 }
 
-/* line 70 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 80 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 .l-footer-col-1 {
   width: 28.499999999999883%;
 }
 
-/* line 73 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 83 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 .l-footer-col-2 {
   width: 23.749999999999904%;
 }
 
-/* line 76 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 86 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 .l-footer-col-3 {
   width: 28.08333333333322%;
 }
 
-/* line 79 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 89 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 .l-footer-col-4 {
   float: right;
   width: 16.6666666666666%;
 }
 @media (max-width: 1023px) {
 
-/* line 84 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 94 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
   .l-footer {
     width: 100%;
     height: auto;
     overflow: visible;
   }
 
-/* line 89 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 99 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
   .l-footer-col-1,
   .l-footer-col-2,
   .l-footer-col-3,
@@ -584,7 +601,7 @@ input {
   }
 }
 
-/* line 145 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
+/* line 182 : /Users/artem/Dropbox/webdev/euromed/styl/layout/layout.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
 
@@ -780,4 +797,50 @@ input {
   text-indent: -9999px;
   overflow: hidden;
   border: 0;
+}
+
+/* line 149 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
+.nav_main {
+  height: 45px;
+  background-color: #003b7c;
+  margin-bottom: 40px;
+}
+
+/* line 154 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
+
+/* line 155 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
+.nav_main .nav__list {
+  width: 100%;
+  height: 43px;
+  margin: 0;
+  padding: 0;
+  display: table;
+  list-style: none;
+  border: 1px solid #003b7c;
+}
+
+/* line 164 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
+.nav_main .nav__item {
+  display: table-cell;
+}
+
+/* line 167 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
+.nav_main .nav__link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 43px;
+  display: block;
+  text-align: center;
+  font-style: 18;
+  text-transform: uppercase;
+  background: #003b7c;
+  transition: all 0.1s;
+  padding: 0 20px;
+}
+
+/* line 179 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/global.styl */
+.nav_main .nav__link:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #003b7c;
 }
