@@ -1,0 +1,146 @@
+k = 100/1200
+
+// logo
+.logo
+    display: block
+    margin-top: 20px
+    image-block('../img/logo.png')
+    hide-text()
+
+// nav_secondary
+.nav_secondary
+    width: k*685%
+    display: table
+    height: 30px
+    line-height: @height
+    border-bottom: 1px solid light-blue
+    
+    & .nav__link
+        display: table-cell
+        color: blue
+        text-align: center
+        font-family: 'Ubuntu Light'
+        
+        &:first-child
+            text-align: left
+            
+        &:last-child
+            text-align: right
+
+// lang
+.lang
+    position: absolute
+    top: 5px
+    right: 0
+
+    &__link
+        font-family: 'Ubuntu Light'
+        font-size: 12px;
+        line-height: 6px
+        color: blue
+        margin-right: 14px
+        
+        &_active
+            border-bottom: 2px solid blue
+
+//contacts
+.contacts
+    &__callback
+        color: red
+        font-size: 16px
+        background: none
+        border: 0
+        padding: 0
+        display: block
+        float: left
+
+    &__tel
+        font-family: 'Ubuntu Light'
+        text-decoration: none
+        color: blue
+        display: block
+        float: left
+        clear: both
+        font-size: 16px
+        line-height: 22px
+        padding-left: 24px
+
+        &:hover
+            text-decoration: none
+
+        &_primary
+            font-size: 20px
+            padding-left: 0
+            line-height: 24px
+
+        &_ks
+            margin-top: 5px
+            background: url('../img/phone-ks-ico.png') no-repeat 1px center
+
+        &_mts
+            background: url('../img/phone-mts-ico.png') no-repeat 2px center
+
+        &_life
+            margin-bottom: 10px
+            background: url('../img/phone-life-ico.png') no-repeat left center
+
+//schedule
+.schedule
+    font-family: 'Ubuntu Light'
+    font-size: 14px
+
+    &__title
+        font-family: 'Ubuntu Medium'
+        line-height: 20px
+        margin-bottom: 10px
+        
+    &__row
+        line-height: 16px
+
+    &__appointmet-link
+        margin-top: 15px
+
+//map
+.map
+    padding-bottom: 60px
+    background: url('../img/header-map.jpg') no-repeat 0 bottom;
+    margin-bottom: 13px
+
+    &__link
+        font-family: 'Ubuntu Light'
+        font-style: normal
+        font-style: 16px
+        color: blue
+        display: block
+        margin-bottom: 3px
+
+//search
+.search
+    position: relative
+    height: 31px
+
+    &__input
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: 1
+        left: 0
+        top: 0
+        box-sizing: border-box
+        text-indent: 10px
+        padding: 0
+        border-radius: 2px
+        border: 1px solid light-blue
+        font-size: 14px
+        font-family: 'Ubuntu Light'
+        line-height: 31px
+
+    &__btn
+        position: absolute
+        z-index: 2
+        top: 7px
+        right: 5px
+        image-block('../img/search-btn-ico.png')
+        hide-text()
+        border: 0
+        

@@ -1,8 +1,17 @@
 ;(function(window, document, $) {
     var app = this;
 
-    var beforeModules = function beforeModules() {
+    app.$win = $(window);
+    app.$doc = $(document);
+    app.$html = $(document.documentElement);
+    app.$body = $(document.body);
 
+    var beforeModules = function beforeModules() {
+        app.$html.removeClass('no-js');
+        app.$html.addClass('js');
+
+        $('#seo-placeholder').text($('#seotext').text());
+        $('#seotext').remove();
     };
 
     var afterModules = function afterModules() {

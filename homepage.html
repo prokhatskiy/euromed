@@ -1,5 +1,10 @@
 <!doctype html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
     <meta charset="UTF-8">
@@ -28,9 +33,11 @@
     </div>
     <div class="l-wrapper">
         <header class="l-header">
-            <a class="logo" href="/">
-        Медицинский центр Euromed
-    </a>
+            <div class="l-header-col-1">
+                <a class="logo" href="/">
+            Медицинский центр Euromed
+        </a>
+            </div>
 
             <nav class="nav nav_secondary">
                 <a class="nav__link" href="#">О клинике</a>
@@ -40,38 +47,43 @@
                 <a class="nav__link" href="#">Контакты</a>
             </nav>
 
-            <div class="contacts">
-                <a class="contacts__tel contacts__tel_primary" href="tel:0800400229">0 (800) 400 22 9</a>
-                <a class="contacts__tel contacts__tel_primary" href="tel:0444163312">0 (44) 416 33 12</a>
-                <a class="contacts__tel contcats__tel_ks" href="tel:0672345678">0 (67) 234 56 78</a>
-                <a class="contacts__tel contacts__tel_mts" href="tel:0500187129">0 (50) 018 71 29</a>
-                <a class="contacts__tel contacts__tel_life" href="tel:0935233944">0 (93) 523 39 44</a>
+            <div class="l-header-col-2">
+                <div class="contacts">
+                    <a class="contacts__tel contacts__tel_primary" href="tel:0800400229">0 (800) 400 22 9</a>
+                    <a class="contacts__tel contacts__tel_primary" href="tel:0444163312">0 (44) 416 33 12</a>
+                    <a class="contacts__tel contacts__tel_ks" href="tel:0672345678">0 (67) 234 56 78</a>
+                    <a class="contacts__tel contacts__tel_mts" href="tel:0500187129">0 (50) 018 71 29</a>
+                    <a class="contacts__tel contacts__tel_life" href="tel:0935233944">0 (93) 523 39 44</a>
 
-                <button class="contacts__callback" data-module-type="Callback">Перезвоните мне</button>
-            </div>
-
-            <div class="schedule">
-                <div class="schedule__title">
-                    График работы медицинского центра
+                    <button class="contacts__callback" data-module-type="Callback">Перезвоните мне</button>
                 </div>
-                <div class="schedule__row">Пн-Пт: 7:00-20:00</div>
-                <div class="schedule__row">Сб: 8:00-19:00</div>
-                <div class="schedule__row">Вс: 9:00-17:00</div>
-
-                <a class="schedule__appointmet-link btn btn_red btn_appointment" href="#">Записатся на прием</a>
             </div>
+            <div class="l-header-col-3">
+                <div class="schedule">
+                    <div class="schedule__title">
+                        График работы
+                        <br>медицинского центра
+                    </div>
+                    <div class="schedule__row">Пн-Пт: 7:00-20:00</div>
+                    <div class="schedule__row">Сб: 8:00-19:00</div>
+                    <div class="schedule__row">Вс: 9:00-17:00</div>
 
-            <address class="map">
-        <a class="contacts.html" href="map__link">
-            г. Киев,<br> ул. Ярослава Ивашкевича, 6-8А
-        </a>
-    </address>
+                    <a class="schedule__appointmet-link btn btn_red btn_appointment" href="#">Записатся на прием</a>
+                </div>
+            </div>
+            <div class="l-header-col-4">
+                <address class="map">
+            <a href="contacts.html" class="map__link">
+                г. Киев,<br> ул. Ярослава Ивашкевича, 6-8А
+            </a>
+        </address>
 
-            <div class="search">
-                <form action="search.html">
-                    <input class="search__input" type="text" />
-                    <button class="search__btn">Поиск</button>
-                </form>
+                <div class="search">
+                    <form action="search.html">
+                        <input class="search__input" type="text" placeholder="Поиск по сайту" />
+                        <button class="search__btn">Поиск</button>
+                    </form>
+                </div>
             </div>
 
             <div class="lang">
@@ -110,7 +122,7 @@
         </main>
     </div>
     <footer class="l-footer">
-        <div class="footer-col">
+        <div class="footer-col l-footer-col-1">
             <dl class="footer-nav">
                 <dt class="footer-nav__title">
                 Медицинский центр EUROMED
@@ -135,7 +147,7 @@
                 © 2014 Все права защищены
             </div>
         </div>
-        <div class="footer-col">
+        <div class="footer-col l-footer-col-2">
             <dl class="footer-nav">
                 <dd class="footer-nav__item"><a href="#" class="footer-nav__link">Гинекология</a>
                 </dd>
@@ -165,7 +177,7 @@
                 </dd>
             </dl>
         </div>
-        <div class="footer-col">
+        <div class="footer-col l-footer-col-3">
             <div class="contacts contacts_footer">
                 <a class="contacts__tel contacts__tel_primary" href="tel:0800400229">0 (800) 400 22 9</a>
                 <a class="contacts__tel contacts__tel_primary" href="tel:0444163312">0 (44) 416 33 12</a>
@@ -188,7 +200,7 @@
                 <a class="soc__link soc__lick_rss" href="#">RSS</a>
             </div>
         </div>
-        <div class="footer-col">
+        <div class="footer-col l-footer-col-4">
             <dl class="footer-nav">
                 <dd class="footer-nav__item"><a href="#" class="footer-nav__link">Записаться на приём</a>
                 </dd>

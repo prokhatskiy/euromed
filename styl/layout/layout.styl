@@ -1,0 +1,94 @@
+/* ==========================================================================
+    layout
+========================================================================== */
+
+k = 100/1200
+
+.l-wrapper,
+.l-footer
+    width: (k*1160)%
+    max-width: 1160px
+    margin: 0 auto
+
+    @media (max-width: 1023px)
+        width: 100%
+
+//HEADER
+.l-header
+    position: relative
+    overflow: hidden
+    height: 250px
+
+    @media (max-width: 1023px)
+        height: auto
+        overflow: visible
+
+.l-header-col-1,
+.l-header-col-2,
+.l-header-col-3
+    float: left
+
+.l-header-col-2,
+.l-header-col-3,
+.l-header-col-4
+    margin-top: 40px
+
+.l-header-col-1
+    width: k*305%
+
+.l-header-col-2
+    width: k*270%
+
+.l-header-col-3
+    width: k*320%
+
+.l-header-col-4
+    float: right
+    width: 270px
+
+@media (max-width: 1023px)
+    .l-header-col-1,
+    .l-header-col-2,
+    .l-header-col-3,
+    .l-header-col-4
+        width: 100%
+        margin-top: 0
+
+//FOOTER
+.l-footer
+    overflow: hidden
+    height: 260px
+    padding: 35px 0
+    border-top: 1px solid #003b7c
+    margin-top: 60px
+
+.l-footer-col-1,
+.l-footer-col-2,
+.l-footer-col-3
+    float: left
+
+.l-footer-col-1
+    width: k*342%
+
+.l-footer-col-2
+    width: k*285%
+
+.l-footer-col-3
+    width: k*337%
+
+.l-footer-col-4
+    float: right
+    width: k*200%
+
+@media (max-width:1023px)
+    .l-footer
+        width: 100%
+        height: auto
+        overflow: visible
+
+    .l-footer-col-1,
+    .l-footer-col-2,
+    .l-footer-col-3,
+    .l-footer-col-4
+        width: 100%
+

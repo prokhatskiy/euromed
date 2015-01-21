@@ -1,0 +1,50 @@
+.btn
+    display: inline-block
+    height: 33px
+    line-height: @height
+    border: 0
+    text-align: center
+    padding: 0
+    box-sizing: content-box
+    border-radius: 1px
+    text-decoration: none
+
+    &:hover
+        text-decoration: none
+
+    &_red
+        background-color: red
+        color: #fff
+        transition: background .3s
+        
+        &:hover
+            background-color: rgba(red .9)
+
+        
+    &_appointment
+        padding-left: 30px
+        padding-right: 15px
+        background-image: url('../img/appointment-ico.png')
+        background-repeat: no-repeat
+        background-position: 7px center
+        line-height: 35px
+
+input
+    outline: none
+
+placeholderStyles()
+    color: light-blue
+    font-size: 14px
+    font-family: 'Ubuntu Light'
+
+::-webkit-input-placeholder
+    placeholderStyles()
+
+:-moz-placeholder
+    placeholderStyles()
+
+::-moz-placeholder
+    placeholderStyles()
+
+:-ms-input-placeholder
+    placeholderStyles()
