@@ -1,0 +1,100 @@
+.carousel
+    margin-bottom: 74px
+    position: relative
+
+    &__title
+        position: relative
+        text-align: center
+        font-weight: normal
+        font-size: 30px
+        height: @font-size
+        line-height: @height
+        font-family: 'Ubuntu Light'
+        text-transform: uppercase
+        margin: 0 0 40px
+
+        span
+            position: relative
+            z-index: 2
+            background-color: #fff;
+            padding: 0 10px
+            display: inline-block
+
+        &:before
+            content: ''
+            height: 0
+            width: 100%
+            position: absolute
+            top: 50%
+            left: 0
+            border-bottom: 1px solid blue
+            margin-top: -1px
+            z-index: 1
+
+    &__content
+        margin: 0 35px
+        height: 330px
+        overflow: hidden
+        position: relative
+
+    &__list
+        list-style: none
+        margin: 0
+        padding: 0
+        width: 1000000px
+        position: absolute
+        top: 0
+        left: 0
+    
+    &__item
+        float: left
+        width: 200px
+        margin-right: 25px
+        text-align: center
+
+    &__link
+        display: block
+        color: blue
+
+        &:hover
+            text-decoration: none
+
+    &__img
+        margin-bottom: 10px
+        display: block
+        border-bottom: 1px solid blue
+
+    &__position,
+    &__name
+        display: block
+        border-bottom: 1px solid blue
+
+    &__name
+        font-size: 16px
+        height: 49px
+        margin-bottom: 8px
+
+    &__last-name
+        font-size: 18px
+
+    &__position
+        font-size: 14px
+        height: 61px
+        line-height: 17px
+        
+    &__btn
+        position: absolute
+        top: 50%
+        margin-top: -20px
+        height: 40px
+        width: 30px
+        hide-text()
+        border: 0
+    
+    &__btn_prev
+        left: 0
+        background: url('../img/carousel-left-btn.png') no-repeat center
+
+    &__btn_next
+        right: 0
+        background: url('../img/carousel-right-btn.png') no-repeat center

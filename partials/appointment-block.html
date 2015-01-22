@@ -1,0 +1,66 @@
+<section class="appointment">
+    <h3 class="appointment__title">
+        Записаться на приём
+    </h3>
+
+    <div class="appointment__form">
+        <form action="#">
+            <label class="appointment__label" for="category">Врач
+                <div class="appointment__input dropdown" data-module-type="Dropdown">
+                    <span class="dropdown__value">выберите из списка</span>
+                    <select class="dropdown__selectbox" name="category" id="category">
+                        <option value="-1" selected>выберите из списка</option>
+                        <option value="1">Гинеколог</option>
+                        <option value="2">Гинеколог</option>
+                    </select>
+                </div>
+            </label>
+
+            <label class="appointment__label" for="doctor">Специалист
+                <div class="appointment__input dropdown dropdown_disabled" data-module-type="Dropdown">
+                    <span class="dropdown__value">выберите из списка</span>
+                    <select class="dropdown__selectbox" name="doctor" id="doctor" disabled>
+                        <option value="-1" selected>выберите из списка</option>
+                    </select>
+                </div>
+            </label>
+
+            <label class="appointment__label" for="date">Дата/время
+                <div class="appointment__input">
+                    <div class="appointment__date dropdown" data-module-type="Dropdown">
+                        <span class="dropdown__value">25.02.2015</span>
+                        <select class="dropdown__selectbox" name="date" id="date">
+                            <option value="25.02.2015" selected>25.02.2015</option>
+                            <option value="26.02.2015">26.02.2015</option>
+                            <option value="27.02.2015">27.02.2015</option>
+                        </select>
+                    </div>
+                    <div class="appointment__time dropdown" data-module-type="Dropdown">
+                        <span class="dropdown__value">14:30</span>
+                        <select class="dropdown__selectbox" name="time" id="time">
+                            <option value="15:30" selected>15:30</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:30">17:30</option>
+                        </select>
+                    </div>
+                </div>
+            </label>
+            
+            <label class="appointment__label" for="name">Ваше имя
+                <input type="text" class="appointment__input input" id="name" name="name">
+            </label>
+            
+            <label class="appointment__label" for="phone">Телефон
+                <input type="tel" class="appointment__input input" id="phone" name="phone">
+            </label>
+            
+            <label class="appointment__label" for="email">E-mail
+                <input type="email" class="appointment__input input" id="email" name="email">
+            </label>
+
+            <div class="appointment__footer">
+                <button class="appointment__submit btn btn_red">Записаться на приём</button>
+            </div>
+        </form>
+    </div>
+</section>

@@ -7,3 +7,12 @@ image-block(img)
 hide-text()
     text-indent: -9999px
     overflow: hidden
+
+clearfix()
+    zoom 1
+    &:after
+    &:before
+        content ""
+        display table
+    &:after
+        clear both

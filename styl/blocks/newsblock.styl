@@ -1,0 +1,119 @@
+.newsblock
+    margin-bottom: 74px
+    clearfix()
+    
+    &__main
+        float: left
+        width: (100 / 1200) * 757%
+        position: relative
+        border-top: 1px solid blue
+        min-height: 300px
+
+        & .newsblock
+            &__img-link
+                width: 380px
+                position: absolute
+                left: 0
+                top: 0
+                margin-right: 20px
+
+            &__img
+                display: block
+                max-width: 100%
+
+            &__title
+                font-weight: normal
+                margin: 7px 0 15px
+                font-style: 20px
+
+                a
+                    color: blue
+
+                    &:hover
+                        text-decoration: none
+                
+            &__descr
+                font-size: 14px
+                line-height: 17px
+                padding-left: 400px
+
+            &__descr-text
+                margin-bottom: 10px
+
+            &__more-link
+                color: red
+                
+    &__old
+        float: right
+        width: (100/1200)*350%
+        position: relative
+
+        &:after
+            content: ''
+            height: 0
+            left: 28px
+            right: 0
+            position: absolute
+            bottom: 0
+            border-top: 1px solid blue
+
+        & .newsblock
+            
+            &__item
+                position: relative
+                min-height: 120px
+                padding-left: 113px + 28px
+                margin-bottom: 23px
+                
+                &:before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    background: url('../img/clock-ico.png') no-repeat center blue
+                    width: 20px
+                    height: 20px
+
+            &__img-link
+                position: absolute
+                left: 28px
+                top: 28px
+
+            &__date
+                height: 20px
+                line-height: @height
+                font-size: 14px
+                position: absolute
+                left: 28px
+                top: 0
+                font-family: 'Ubuntu Light'
+
+            &__title
+                margin: 0 0 3px
+                padding-top: 25px
+                font-size: 14px
+                line-height: 15px
+                font-family: 'Ubuntu Medium'
+
+                a
+                    color: blue
+
+            &__more-link
+                color: red
+                font-size: 14px
+
+            &__all-link
+                display: block
+                float: left
+                clear: both
+                background: blue
+                padding: 0 3px
+                color: #fff
+                height: 19px
+                line-height: @height + 1px
+                font-size: 14px
+                font-family: 'Ubuntu Light'
+                margin-left: 28px
+
+                &:hover
+                    text-decoration: none

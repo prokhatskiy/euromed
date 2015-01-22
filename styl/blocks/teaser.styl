@@ -1,0 +1,56 @@
+padding = (100 / 1200) * 52%
+
+.teaser
+    &__inner
+        display: table
+        table-layout: fixed
+        width: 100% + padding * 2
+        margin-left: - padding
+        margin-bottom: 100px
+
+    &__item
+        display: table-cell
+        padding: 0 padding
+
+    &__title
+        color: red
+        font-weight: normal
+        font-family: 'Ubuntu Light'
+        font-size: 24px
+        line-height: @font-size
+        text-transform: uppercase
+        text-align: center
+        margin: 65px 0 25px
+        position: relative
+
+        &:before
+            content: ''
+            position: absolute
+            left: 50%
+            top: -86px
+            background-color: #fff
+            width: 83px
+            height: 67px
+            margin-left: - (@width / 2)
+            z-index: 2
+
+        &:after
+            content: ''
+            height: 0
+            width: 100%
+            border-bottom: 1px solid red
+            position: absolute
+            top: -54px
+            left: 0
+            z-index: 1
+
+    &__item_euro &__title:before
+        background: url('../img/euro-ico.png') no-repeat center #fff
+
+    &__item_target &__title:before
+        background: url('../img/target-ico.png') no-repeat center #fff
+
+    &__item_economy &__title:before
+        background: url('../img/economy-ico.png') no-repeat center #fff
+
+    

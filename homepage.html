@@ -111,14 +111,374 @@
             </ul>
         </nav>
 
-        <main class="l-container">
+        <main class="l-container l-container_homepage">
             <aside class="l-sidebar l-sidebar_left">
-
+                <nav class="category-bav">
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                    <a class="category-nav__link" href="category.html">
+                        <img class="category-nav__img" src="img/category-nav/ginecologia-ico.png" alt="" />Гинекология
+                    </a>
+                </nav>
             </aside>
             <section class="l-content">
+                <section class="slider">
+                    <div class="slider__content">
+                        <ul class="slider__body">
+                            <li class="slider__item">
+                                <a class="slide__link" href="#">
+                                    <img class="slider__img" src="temp/home-banner.jpg" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="slider__nav">
+                        <li class="slider__nav-btn"><span>1</span>
+                        </li>
+                        <li class="slider__nav-btn slider__nav-btn_active"><span>2</span>
+                        </li>
+                        <li class="slider__nav-btn"><span>3</span>
+                        </li>
+                        <li class="slider__nav-btn"><span>4</span>
+                        </li>
+                        <li class="slider__nav-btn"><span>5</span>
+                        </li>
+                    </ul>
+                </section>
+                <div class="l-home-content-col-1">
+                    <section class="appointment">
+                        <h3 class="appointment__title">
+        Записаться на приём
+    </h3>
 
+                        <div class="appointment__form">
+                            <form action="#">
+                                <label class="appointment__label" for="category">Врач
+                                    <div class="appointment__input dropdown" data-module-type="Dropdown">
+                                        <span class="dropdown__value">выберите из списка</span>
+                                        <select class="dropdown__selectbox" name="category" id="category">
+                                            <option value="-1" selected>выберите из списка</option>
+                                            <option value="1">Гинеколог</option>
+                                            <option value="2">Гинеколог</option>
+                                        </select>
+                                    </div>
+                                </label>
+
+                                <label class="appointment__label" for="doctor">Специалист
+                                    <div class="appointment__input dropdown dropdown_disabled" data-module-type="Dropdown">
+                                        <span class="dropdown__value">выберите из списка</span>
+                                        <select class="dropdown__selectbox" name="doctor" id="doctor" disabled>
+                                            <option value="-1" selected>выберите из списка</option>
+                                        </select>
+                                    </div>
+                                </label>
+
+                                <label class="appointment__label" for="date">Дата/время
+                                    <div class="appointment__input">
+                                        <div class="appointment__date dropdown" data-module-type="Dropdown">
+                                            <span class="dropdown__value">25.02.2015</span>
+                                            <select class="dropdown__selectbox" name="date" id="date">
+                                                <option value="25.02.2015" selected>25.02.2015</option>
+                                                <option value="26.02.2015">26.02.2015</option>
+                                                <option value="27.02.2015">27.02.2015</option>
+                                            </select>
+                                        </div>
+                                        <div class="appointment__time dropdown" data-module-type="Dropdown">
+                                            <span class="dropdown__value">14:30</span>
+                                            <select class="dropdown__selectbox" name="time" id="time">
+                                                <option value="15:30" selected>15:30</option>
+                                                <option value="16:30">16:30</option>
+                                                <option value="17:30">17:30</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="appointment__label" for="name">Ваше имя
+                                    <input type="text" class="appointment__input input" id="name" name="name">
+                                </label>
+
+                                <label class="appointment__label" for="phone">Телефон
+                                    <input type="tel" class="appointment__input input" id="phone" name="phone">
+                                </label>
+
+                                <label class="appointment__label" for="email">E-mail
+                                    <input type="email" class="appointment__input input" id="email" name="email">
+                                </label>
+
+                                <div class="appointment__footer">
+                                    <button class="appointment__submit btn btn_red">Записаться на приём</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <div class="l-home-content-col-2">
+                    <div class="banner banner_homepage">
+                        <img class="banner__img" src="temp/small-banner-home.jpg" alt="" />
+                    </div>
+                </div>
             </section>
-            <section id="seo-placeholder" class="seotext"></section>
+            <section class="l-wide">
+                <section class="carousel">
+                    <h3 class="carousel__title">
+        <span>Наши врачи</span>
+    </h3>
+                    <div class="carousel__content">
+                        <ul class="carousel__list">
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+                            <li class="carousel__item">
+                                <a class="carousel__link" href="#">
+                                    <img class="carousel__img" src="temp/doctor.jpg" alt="" />
+                                    <span class="carousel__name">
+                        <span class="carousel__last-name">Пашковский</span>
+                                    <br>Пётр Васильевич
+                                    </span>
+                                    <span class="carousel__position">
+                        Уролог.<br>
+                        Врач высшей категории.<br>
+                        Стаж работы 16 лет.
+                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <button class="carousel__btn carousel__btn_prev">Предыдущий слайд</button>
+                    <button class="carousel__btn carousel__btn_next">Следующий слайд</button>
+                </section>
+                <section class="teaser">
+                    <div class="teaser__inner">
+                        <div class="teaser__item teaser__item_euro">
+                            <h3 class="teaser__title">
+                Европейский уровень
+            </h3>
+                            Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem.
+                        </div>
+                        <div class="teaser__item teaser__item_target">
+                            <h3 class="teaser__title">
+                Точная диагностика
+            </h3>
+                            Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem.
+                        </div>
+                        <div class="teaser__item teaser__item_economy">
+                            <h3 class="teaser__title">
+                Доступные цены
+            </h3>
+                            Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem.
+                        </div>
+                    </div>
+                </section>
+                <section class="newsblock">
+                    <article class="newsblock__main">
+                        <a class="newsblock__img-link" href="#">
+                            <img class="newsblocks__img" src="temp/news-photo-home.jpg" alt="" />
+                        </a>
+                        <div class="newsblock__descr">
+                            <h3 class="newsblock__title"><a href="#" class="newsblock__link">Профилактика остеохондроза</a></h3>
+                            <div class="newsblock__descr-text">
+                                Остеохондроз набирает поражающие масштабы. Дегенеративные изменения в позвонках имеются у большинства из нас, даже у младенцев встречаются такие нарушения. Но осложнения (боль, онемение, потеря подвижности) возникают не всегда и не у каждого. К группе
+                                риска относятся те, кто имеет сидячую работу или чрезмерные физические нагрузки, лишний вес и склонность к остеохондрозу. Да, это заболевание передается и генетически. Причем, как отмечают врачи, почти в 30 процентах случаев
+                                и преимущественно по женской линии. Хотя болеют им чаще мужчины.
+                            </div>
+                            <a class="newsblock__more-link" href="#">Читать далее &#8594;</a>
+                        </div>
+                    </article>
+                    <div class="newsblock__old">
+                        <article class="newsblock__item">
+                            <a class="newsblock__img-link" href="#">
+                                <img class="newsblocks__img" src="temp/news-small-photo-home.jpg" alt="" />
+                            </a>
+                            <div class="newsblock__descr">
+                                <time class="newsblock__date">25 января 2015</time>
+                                <h3 class="newsblock__title"><a href="#" class="newsblock__link">В нашем центре появилась
+                    перваяв Украине
+                    ультразвуковая система
+                    Philips iE33 xMATRIX</a></h3>
+                                <a class="newsblock__more-link" href="#">Читать далее &#8594;</a>
+                            </div>
+                        </article>
+                        <article class="newsblock__item">
+                            <a class="newsblock__img-link" href="#">
+                                <img class="newsblocks__img" src="temp/news-small-photo-home.jpg" alt="" />
+                            </a>
+                            <div class="newsblock__descr">
+                                <time class="newsblock__date">25 января 2015</time>
+                                <h3 class="newsblock__title"><a href="#" class="newsblock__link">В нашем центре появилась
+                    перваяв Украине
+                    ультразвуковая система
+                    Philips iE33 xMATRIX</a></h3>
+                                <a class="newsblock__more-link" href="#">Читать далее &#8594;</a>
+                            </div>
+                        </article>
+                        <a class="newsblock__all-link" href="#">Все новости</a>
+                    </div>
+                </section>
+                <section id="seo-placeholder" class="seotext"></section>
+                <div class="l-homepage-bottom-section">
+                    <div class="l-homepage-bottom-banner">
+                        <div class="banner banner_home-wide">
+                            <a class="banner__link" href="#">
+                                <img class="banner__img" src="temp/home-bottom-banner.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="l-homepage-facebook">
+                        <img src="temp/facebook-home.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <footer class="l-footer">

@@ -6,14 +6,39 @@
         @@include('../partials/header.html')
         @@include('../partials/main-nav.html')
 
-        <main class="l-container">
+        <main class="l-container l-container_homepage">
             <aside class="l-sidebar l-sidebar_left">
-
+                @@include('../partials/homepage/category-nav.html')
             </aside>
             <section class="l-content">
-
+                @@include('../partials/homepage/carousel-banner.html')
+                <div class="l-home-content-col-1">
+                    @@include('../partials/appointment-block.html')
+                </div>
+                <div class="l-home-content-col-2">
+                    <div class="banner banner_homepage">
+                        <img class="banner__img" src="temp/small-banner-home.jpg" alt=""/>
+                    </div>
+                </div>
             </section>
-            @@include('../partials/homepage/seoplace.html')
+            <section class="l-wide">
+                @@include('../partials/doctors-carousel.html')
+                @@include('../partials/homepage/teasers.html')
+                @@include('../partials/homepage/newsblock.html')
+                @@include('../partials/homepage/seoplace.html')
+                <div class="l-homepage-bottom-section">
+                    <div class="l-homepage-bottom-banner">
+                        <div class="banner banner_home-wide">
+                            <a class="banner__link" href="#">
+                                <img class="banner__img" src="temp/home-bottom-banner.jpg" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="l-homepage-facebook">
+                        <img src="temp/facebook-home.jpg" alt=""/>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     @@include('../partials/footer.html')
