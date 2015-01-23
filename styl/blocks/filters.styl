@@ -1,0 +1,71 @@
+.filters
+
+    &__item
+        margin-bottom: 30px
+        overflow: hidden
+        border-bottom: 1px solid light-blue
+
+    &__btn
+        height: 40px
+        line-height: @height
+        border: 0
+        display: block
+        width: 100%
+        font-family: 'Ubuntu Light'
+        background: none
+        text-align: left
+        padding: 0
+
+        &:after
+            content: ' '
+            display: inline-block
+            vertical-align: middle
+            image-block('../img/filters-arr-bottom.png')
+            margin-left: 25px
+            opacity: .5
+
+    &__item_active
+        .filters__btn
+            &:after
+                image-block('../img/filters-arr-top.png')
+
+    &__item-content
+        clearfix()
+        padding: 20px 0 10px
+
+    &__col
+        width: (100 / 3 - 2) %
+        padding-right: 2%
+        float: left
+
+    &__row
+        margin-bottom: 10px
+
+    &__label
+        margin-left: 10px
+
+    &__alphabet-link
+        font-size: 21px
+        text-transform: uppercase
+        margin: 0 2px
+
+        &:first-child
+            margin-left: 0
+            margin-right: 7px
+            font-size: 16px
+            text-transform: none
+
+        &_active
+            color: red
+            
+            
+    &__item-content_alpha
+        padding-left: 43px
+        position: relative
+
+        .filters
+            &__alphabet-link
+                &:first-child
+                    position: absolute
+                    left: 0
+                    top: 21px

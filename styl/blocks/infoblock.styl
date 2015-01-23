@@ -1,4 +1,4 @@
-.newsblock
+.infoblock
     margin-bottom: 74px
     clearfix()
     
@@ -9,7 +9,7 @@
         border-top: 1px solid blue
         min-height: 300px
 
-        & .newsblock
+        & .infoblock
             &__img-link
                 width: 380px
                 position: absolute
@@ -24,7 +24,7 @@
             &__title
                 font-weight: normal
                 margin: 7px 0 15px
-                font-style: 20px
+                font-size: 20px
 
                 a
                     color: blue
@@ -43,7 +43,7 @@
             &__more-link
                 color: red
                 
-    &__old
+    &__aside
         float: right
         width: (100/1200)*350%
         position: relative
@@ -57,7 +57,7 @@
             bottom: 0
             border-top: 1px solid blue
 
-        & .newsblock
+        & .infoblock
             
             &__item
                 position: relative
@@ -117,3 +117,38 @@
 
                 &:hover
                     text-decoration: none
+
+    &_aside
+        margin-bottom: 50px
+
+        .infoblock
+            &__main-title
+                text-transform: uppercase
+                font-weight: normal
+                margin: 0 0 25px
+                font-style: 20px
+
+            &__aside
+                overflow: hidden
+                width: auto
+                float: none
+
+    &_articles
+        .infoblock
+            &__aside
+                &:after
+                    border-color: red
+
+                .infoblock
+                    &__item:before
+                        background: url('../img/hamburger-ico.png') no-repeat center red
+
+                    &__all-link
+                        background-color: red
+
+                    &__title
+                       padding-top: 0
+
+                    &__img-link
+                        top: 0
+        

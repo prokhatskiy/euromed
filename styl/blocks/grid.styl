@@ -1,0 +1,16 @@
+gridK = 100 / 710
+gridW = gridK * 200
+gridM =  (100 - (3*gridW))/3
+
+.grid
+    clearfix();
+    font-size: 0
+    position: relative
+    left: -(gridM)%
+    width: (100 + gridM)%
+
+    &__item
+        float: left
+        width: (gridW)%
+        margin-left: (gridM)%
+        margin-bottom: 50px

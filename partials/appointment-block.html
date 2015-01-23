@@ -1,4 +1,4 @@
-<section class="appointment">
+<section class="appointment @@modifier">
     <h3 class="appointment__title">
         Записаться на приём
     </h3>
@@ -6,43 +6,39 @@
     <div class="appointment__form">
         <form action="#">
             <label class="appointment__label" for="category">Врач
-                <div class="appointment__input dropdown" data-module-type="Dropdown">
-                    <span class="dropdown__value">выберите из списка</span>
-                    <select class="dropdown__selectbox" name="category" id="category">
-                        <option value="-1" selected>выберите из списка</option>
-                        <option value="1">Гинеколог</option>
-                        <option value="2">Гинеколог</option>
-                    </select>
-                </div>
+                @@include('dropdown.html', {
+                    "default": "выберите из списка",
+                    "id": "category",
+                    "name": "category",
+                    "class": "appointment__input",
+                    "attr": ""
+                })
             </label>
 
             <label class="appointment__label" for="doctor">Специалист
-                <div class="appointment__input dropdown dropdown_disabled" data-module-type="Dropdown">
-                    <span class="dropdown__value">выберите из списка</span>
-                    <select class="dropdown__selectbox" name="doctor" id="doctor" disabled>
-                        <option value="-1" selected>выберите из списка</option>
-                    </select>
-                </div>
+                @@include('dropdown.html', {
+                    "attr": "disabled",
+                    "default": "выберите из списка",
+                    "id": "doctor",
+                    "name": "doctor",
+                    "class": "appointment__input dropdown_disabled"
+                })
             </label>
 
             <label class="appointment__label" for="date">Дата/время
                 <div class="appointment__input">
-                    <div class="appointment__date dropdown" data-module-type="Dropdown">
-                        <span class="dropdown__value">25.02.2015</span>
-                        <select class="dropdown__selectbox" name="date" id="date">
-                            <option value="25.02.2015" selected>25.02.2015</option>
-                            <option value="26.02.2015">26.02.2015</option>
-                            <option value="27.02.2015">27.02.2015</option>
-                        </select>
-                    </div>
-                    <div class="appointment__time dropdown" data-module-type="Dropdown">
-                        <span class="dropdown__value">14:30</span>
-                        <select class="dropdown__selectbox" name="time" id="time">
-                            <option value="15:30" selected>15:30</option>
-                            <option value="16:30">16:30</option>
-                            <option value="17:30">17:30</option>
-                        </select>
-                    </div>
+                    @@include('dropdown.html', {
+                        "default": "25.02.2015",
+                        "id": "date",
+                        "name": "date",
+                        "class": "appointment__date"
+                    })
+                    @@include('dropdown.html', {
+                        "default": "15:30",
+                        "id": "time",
+                        "name": "time",
+                        "class": "appointment__time"
+                    })
                 </div>
             </label>
             

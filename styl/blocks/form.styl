@@ -47,7 +47,8 @@
     font-style: 15px
     font-family: 'Ubuntu'
 
-    &:focus
+    &:focus,
+    &:hover
         border-color: blue
 
 input
@@ -109,3 +110,33 @@ placeholderStyles()
         right: 0
         box-shadow: 0 0 15px #fff
         background: url('../img/selectbox-arrow.png') no-repeat center #fff
+
+//checkbox
+.checkbox
+    display: inline-block
+    width: 10px
+    height: 10px
+    background-color: #fff
+    border: 1px solid blue
+    position: relative
+
+    input
+        opacity: 0
+        z-index: 2
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+    &__bg
+        position: absolute
+        left: 2px
+        top: 2px
+        height: 6px
+        width: 6px
+        background-color: blue
+        display: none
+
+    & input:checked + &__bg
+        display: block
