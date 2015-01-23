@@ -7,7 +7,7 @@
     &__link
         display: block
         height: 52px
-        border-bottom: 1px dotted blue
+        border-top: 1px dotted blue
         padding-left: 66px
         position: relative
         text-decoration: none
@@ -17,8 +17,39 @@
         line-height: @height
         color: blue
         
-        &:first-child
+        &:last-child
             border-top: 1px dotted blue
 
         &:hover
             text-decoration: none
+
+    &_cols
+        width: 560px + (560 - 240 * 2)px
+        margin: 40px 0
+        position: relative
+        left: -(560 - 240 * 2)px
+        clear: both
+        clearfix()
+
+        .category-nav
+            &__link
+                width: 240px - 66px
+                float: left
+                margin-left: (560 - 240 * 2)px
+                border: 1px dotted #fff
+                border-left: 0
+                border-right: 0
+
+                &:nth-child(2n)
+                    border-top: 1px dotted blue
+                    border-bottom-color: #fff
+
+                &:nth-child(2n + 1)
+                    border-bottom: 1px dotted blue
+                    border-top-color: #fff
+
+                &:first-child
+                    border-top: 1px dotted blue
+
+                &:last-child
+                    border-bottom: 1px dotted blue

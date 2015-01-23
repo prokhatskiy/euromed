@@ -10,7 +10,7 @@
     text-decoration: none
     font-family: 'Ubuntu'
     font-weight: normal
-    font-style: 18px
+    font-size: 18px
 
     &:hover
         text-decoration: none
@@ -22,6 +22,25 @@
         
         &:hover
             background-color: rgba(red .9)
+            
+    &_blue
+        background: blue
+        color: #fff
+        trasition: background .3s
+        
+        &:hover
+            background-color: rgba(blue .9)
+            
+    &_large
+        height: 44px
+        line-height: @height
+
+    &_white
+        background: #ffffff
+        border: 1px solid blue
+        height: 31px
+        padding: 0 10px
+        font-size: 16px
 
         
     &_appointment
@@ -44,7 +63,7 @@
     text-indent: 10px
     transition: border .3s
     color: blur
-    font-style: 15px
+    font-size: 15px
     font-family: 'Ubuntu'
 
     &:focus,
