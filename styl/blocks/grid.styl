@@ -8,9 +8,46 @@ gridM =  (100 - (3*gridW))/3
     position: relative
     left: -(gridM)%
     width: (100 + gridM)%
+    
+    &__title
+        text-align: center
+        font-weight: normal
+        font-family: 'Ubuntu Light'
+        font-size: 30px
+        text-transform: uppercase
+        position: relative
+        margin-bottom: 35px
+        margin-top: 0
+        
+        &:before
+            content: ''
+            border-bottom: 1px solid blue
+            position: absolute
+            top: 50%
+            left: 0
+            width: 100%
+        
+        span
+            position: relative
+            z-index: 2
+            background-color: #fff
+            padding: 0 10px
 
     &__item
         float: left
         width: (gridW)%
         margin-left: (gridM)%
         margin-bottom: 50px
+
+    &_less
+        text-align: center
+        width: 100%
+        left: 0
+
+        .grid
+            &__item
+                display: inline-block
+                vertical-align: top
+                float: none
+                margin-left: 0
+                
