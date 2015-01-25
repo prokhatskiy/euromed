@@ -1,0 +1,70 @@
+.articles
+    &__head
+        height: 30px
+        line-height: @height
+        margin-bottom: 42px
+
+    &__input
+        display: inline-block
+        margin-left: 30px
+        width: 190px
+        vertical-align: middle
+
+
+    &__item
+        clearfix()
+        position: relative
+        margin-bottom: 60px
+        min-height: 300px
+        
+    &__img
+        position: absolute
+        top: 0
+        left: 0
+
+    &__img-src
+        width: 100%
+        display: block
+
+    &__aside
+        padding: 0 0 45px 380px
+        position: relative
+        font-size: 14px
+        line-height: 16px
+        min-height 300px - 45px
+        
+    &__title
+        font-weight: normal
+        margin: 0 0 20px
+        font-size: 23px
+        line-height: 25px
+        font-family: 'Ubuntu Medium'
+
+    &__link
+        color: blue
+
+    &__descr
+        margin-bottom: 15px
+        
+    &__footer
+        position: absolute
+        bottom: -5px
+        left: 380px
+
+    &_news
+        .articles
+            &__date
+                position: absolute
+                top: 0
+                left: 0
+
+            &__img
+                left: 30px
+                top: 30px
+            
+            &__aside
+                padding-bottom: 0
+                padding-left: 400px
+                padding-top: 30px
+
+

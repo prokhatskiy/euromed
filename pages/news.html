@@ -1,0 +1,32 @@
+@@include('../partials/doctype.html')
+@@include('../partials/head.html')
+<body data-module-type="Global">
+<div class="l-wrapper">
+    @@include('../partials/header.html')
+    @@include('../partials/main-nav.html')
+
+    <main class="l-container">
+
+        <div class="crumbs">
+            <a class="crumbs__link" href="#">Главная</a>
+            <a class="crumbs__link" href="#">О клинике</a>
+        </div>
+
+        <section class="l-content">
+            @@include('../partials/page-title.html', { "text": "Новости" })
+            @@include('../partials/news.html')
+            @@include('../partials/pager.html')
+        </section>
+
+        <aside class="l-sidebar l-sidebar_right">
+            @@include('../partials/appointment-block.html', { "modifier": "appointment_aside" })
+            @@include('../partials/sale-banner.html', { "modifier": "banner_aside" })
+            @@include('../partials/aside-news.html')
+            @@include('../partials/facebook.html')
+        </aside>
+    </main>
+</div>
+@@include('../partials/footer.html')
+@@include('../partials/scripts.html')
+</body>
+</html>

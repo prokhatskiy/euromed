@@ -1,0 +1,32 @@
+<section class="articles">
+    <div class="articles__head">
+        Статьи по теме:
+        @@include('dropdown.html', {
+            "default": "выберите из списка",
+            "id": "category",
+            "name": "category",
+            "class": "articles__input",
+            "attr": ""
+        })
+    </div>
+    <div class="articles__content">
+        <article class="articles__item">
+            <a class="articles__img" href="#">
+                <img class="articles__img-src" src="temp/article-img.jpg" alt=""/>
+            </a>
+            <aside class="articles__aside">
+                <h2 class="articles__title">
+                    <a class="articles__link" href="#">Острая респираторная вирусная инфекция. Симптомы, профилактика и эффективное лечение.</a>
+                </h2>
+                <div class="articles__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <a class="articles__more-btn" href="#">Читать далее →</a>
+                <div class="articles__footer">
+                    Тема: <a href="#">Терапия</a><br/>
+                    Автор: <a href="#">Мамонтова В.М.</a>
+                </div>
+            </aside>
+        </article>
+    </div>
+</section>
