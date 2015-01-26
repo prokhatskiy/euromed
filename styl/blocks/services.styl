@@ -1,0 +1,49 @@
+.services
+
+    gridK = 100 / 710
+    gridW = gridK * 200
+    gridM =  (100 - (3*gridW))/3
+
+    clearfix()
+    font-size: 0
+    position: relative
+    left: -(gridM)%
+    width: (100 + gridM)%
+
+    &__link
+        span
+            display: block
+
+    &__item
+        display: inline-block
+        vertical-align: top
+        font-size: 14px
+        text-align: center
+        width: (gridW)%
+        margin-left: (gridM)%
+        margin-bottom: 60px
+        
+    &__head
+        position: relative
+        text-transform: uppercase
+        color: red
+        font-size: 14px
+        font-family: 'Ubuntu Medium'
+        padding-bottom: 15px
+        border-bottom: 1px solid blue
+
+    &__img
+        display: inline-block
+        margin-bottom: 10px
+
+    &__descr
+        color: blue
+        padding: 15px 0
+        border-bottom: 1px solid blue
+        
+    &__footer
+        border-bottom: 1px solid blue
+        padding: 15px 0
+
+
+        
