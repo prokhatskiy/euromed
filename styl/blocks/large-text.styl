@@ -1,0 +1,35 @@
+.large-text
+    &__pager
+        width: 690px
+        margin: 10px auto 100px
+        position: relative
+        overflow: hidden
+        
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: 50%
+            bottom: 0
+            width: 1px
+            background: blue
+            
+        &-prev,
+        &-next
+            float: left
+            width: 220px
+            color: #7388a9
+            font-size: 14px
+            
+        &-prev
+            text-align: right
+
+        &-next
+            text-align: left
+            float: right
+
+    &__link
+        display: block
+        font-size: 16px
+        color: blue
+        margin-top: 10px
