@@ -59,3 +59,44 @@
 
     &_aside
         margin-bottom: 50px
+
+    &_page
+        width: 465px
+        padding-left: 60px
+        border: 0
+
+        &:before
+            left: 0
+            top: 0
+            height: 50px
+            width: 50px
+            background-image: url('../img/appointmentpage-large-ico.png')
+
+        .appointment
+            &__title
+                height: 50px
+                line-height: @height
+                font-size: 40px
+                padding: 0 0 20px 0
+                font-family: "Ubuntu Light"
+
+            &__label
+                padding-left: 0
+                padding-right: 0
+
+            &__textarea,
+            &__input,
+            &__footer
+                float: right
+                width: (100 / (465)) * 333%
+                
+            &__footer
+                margin-right: 0
+
+            &__input
+                margin-bottom: 15px
+
+                &_dropdown
+                    width: (100 / (465)) * 217%
+                    margin-right: (100 / (465)) * (333 - 217)%
+            

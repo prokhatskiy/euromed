@@ -1423,7 +1423,7 @@ input {
   border-bottom: 1px dotted #003b7c;
 }
 
-/* line 25 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/category-nav.styl */
+/* line 26 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/category-nav.styl */
 
 /* line 55 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
 
@@ -1438,18 +1438,19 @@ input {
 .banner__img {
   position: absolute;
   min-width: 100%;
+  min-height: 100%;
   left: 0;
   top: 0;
 }
 
-/* line 12 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
+/* line 13 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
 .banner_homepage,
 .banner_aside {
   border: 1px solid #d30017;
   height: 318px;
 }
 
-/* line 17 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
+/* line 18 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
 .banner_homepage,
 .banner_aside,
 .banner_homepage .banner__img,
@@ -1457,19 +1458,19 @@ input {
   border-radius: 2px;
 }
 
-/* line 21 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
+/* line 22 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
 .banner_home-wide {
   height: 300px;
 }
 
-/* line 24 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
+/* line 25 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
 .banner_aside {
   margin-bottom: 50px;
 }
 
-/* line 61 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
+/* line 101 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
 
-/* line 25 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+/* line 101 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
 .appointment {
@@ -1565,9 +1566,66 @@ input {
   margin-bottom: 50px;
 }
 
+/* line 63 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+.appointment_page {
+  width: 465px;
+  padding-left: 60px;
+  border: 0;
+}
+
+/* line 68 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+.appointment_page:before {
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/appointmentpage-large-ico.png");
+}
+
+/* line 75 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+
+/* line 76 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+.appointment_page .appointment__title {
+  height: 50px;
+  line-height: 50px;
+  font-size: 40px;
+  padding: 0 0 20px 0;
+  font-family: "Ubuntu Light";
+}
+
+/* line 83 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+.appointment_page .appointment__label {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 87 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+.appointment_page .appointment__textarea,
+.appointment_page .appointment__input,
+.appointment_page .appointment__footer {
+  float: right;
+  width: 71.61290322580638%;
+}
+
+/* line 93 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+.appointment_page .appointment__footer {
+  margin-right: 0;
+}
+
+/* line 96 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+.appointment_page .appointment__input {
+  margin-bottom: 15px;
+}
+
+/* line 99 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+.appointment_page .appointment__input_dropdown {
+  width: 46.66666666666662%;
+  margin-right: 24.94623655913976%;
+}
+
 /* line 70 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
 
-/* line 61 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/slider.styl */
+/* line 79 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/slider.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/slider.styl */
 .slider {
@@ -2748,7 +2806,7 @@ input {
 
 /* line 46 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
 
-/* line 46 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/services.styl */
+/* line 35 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/services.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/services.styl */
 .services {

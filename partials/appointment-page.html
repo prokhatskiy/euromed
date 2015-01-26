@@ -1,0 +1,65 @@
+<section class="appointment appointment_page">
+    <h3 class="appointment__title">
+        Записаться на приём
+    </h3>
+
+    <div class="appointment__form">
+        <form action="#">
+            <label class="appointment__label" for="category">Врач
+                @@include('dropdown.html', {
+                "default": "выберите из списка",
+                "id": "category",
+                "name": "category",
+                "class": "appointment__input  appointment__input_dropdown",
+                "attr": ""
+                })
+            </label>
+
+            <label class="appointment__label" for="doctor">Специалист
+                @@include('dropdown.html', {
+                "attr": "disabled",
+                "default": "выберите из списка",
+                "id": "doctor",
+                "name": "doctor",
+                "class": "appointment__input  appointment__input_dropdown dropdown_disabled"
+                })
+            </label>
+
+            <label class="appointment__label" for="date">Дата/время
+                <div class="appointment__input appointment__input_dropdown">
+                    @@include('dropdown.html', {
+                    "default": "25.02.2015",
+                    "id": "date",
+                    "name": "date",
+                    "class": "appointment__date"
+                    })
+                    @@include('dropdown.html', {
+                    "default": "15:30",
+                    "id": "time",
+                    "name": "time",
+                    "class": "appointment__time"
+                    })
+                </div>
+            </label>
+
+            <label class="appointment__label" for="name">Ваше имя
+                <input type="text" class="appointment__input input" id="name" name="name">
+            </label>
+
+            <label class="appointment__label" for="phone">Телефон
+                <input type="tel" class="appointment__input input" id="phone" name="phone">
+            </label>
+
+            <label class="appointment__label" for="email">E-mail
+                <input type="email" class="appointment__input input" id="email" name="email">
+            </label>
+            <label class="appointment__label" for="comments">Клмментарий
+                <textarea class="appointment__textarea appointment__textarea input" id="comments" name="comments"></textarea>
+            </label>
+
+            <div class="appointment__footer">
+                <button class="appointment__submit btn btn_red">Записаться на приём</button>
+            </div>
+        </form>
+    </div>
+</section>
