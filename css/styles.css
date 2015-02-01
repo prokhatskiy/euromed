@@ -1470,7 +1470,7 @@ input {
 
 /* line 101 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/banner.styl */
 
-/* line 101 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
+/* line 26 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
 .appointment {
@@ -1625,7 +1625,7 @@ input {
 
 /* line 70 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/appointment.styl */
 
-/* line 79 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/slider.styl */
+/* line 101 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/slider.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/slider.styl */
 .slider {
@@ -2751,9 +2751,9 @@ input {
   padding-top: 30px;
 }
 
-/* line 35 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/articles.styl */
+/* line 71 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/articles.styl */
 
-/* line 68 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+/* line 71 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
 
@@ -2804,9 +2804,73 @@ input {
   margin-top: 10px;
 }
 
+/* line 37 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+.large-text__author {
+  padding-top: 15px;
+  border-top: 1px solid #003b7c;
+  zoom: 1;
+}
+
+/* line 13 : /Users/artem/Dropbox/webdev/euromed/styl/mixins/mixins.styl */
+.large-text__author:after,
+.large-text__author:before {
+  content: "";
+  display: table;
+}
+
+/* line 17 : /Users/artem/Dropbox/webdev/euromed/styl/mixins/mixins.styl */
+.large-text__author:after {
+  clear: both;
+}
+
+/* line 42 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+.large-text__author-head {
+  margin-bottom: 20px;
+}
+
+/* line 45 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+.large-text__author-name {
+  margin: 8px 0 7px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* line 50 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+.large-text__author-name span {
+  display: block;
+  font-size: 18px;
+}
+
+/* line 54 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+.large-text__author-body {
+  position: relative;
+  min-height: 130px;
+  margin-bottom: 80px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* line 61 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+.large-text__author-img {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+/* line 66 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+.large-text__author-descr {
+  padding-left: 110px;
+}
+
+/* line 69 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
+.large-text__author-link {
+  display: block;
+  margin-top: 10px;
+}
+
 /* line 46 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/large-text.styl */
 
-/* line 35 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/services.styl */
+/* line 55 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/services.styl */
 
 /* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/services.styl */
 .services {
@@ -2875,4 +2939,40 @@ input {
 .services__footer {
   border-bottom: 1px solid #003b7c;
   padding: 15px 0;
+}
+
+/* line 21 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/services.styl */
+
+/* line 46 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/recent.styl */
+
+/* line 1 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/recent.styl */
+.recent {
+  margin: 0 0 75px;
+  padding: 0;
+}
+
+/* line 5 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/recent.styl */
+.recent__title {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #003b7c;
+  margin-bottom: 20px;
+}
+
+/* line 12 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/recent.styl */
+.recent__item {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* line 16 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/recent.styl */
+.recent__link {
+  color: #003b7c;
+  font-family: 'Ubuntu Medium';
+}
+
+/* line 20 : /Users/artem/Dropbox/webdev/euromed/styl/blocks/recent.styl */
+.recent__author {
+  display: block;
 }
